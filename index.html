@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direct2Chat</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include jQuery (required by Select2) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Select2 CSS & JS -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Direct2Chat!</h1>
+    <h5>Message to anyone without saving their number in contacts via WhatsApp</h5>
+    <form id="phoneForm">
+      <div class="country-selector">
+        <select id="countrySelect"  class="searchable" required>
+          <option value="">Select a Country Code</option>
+          <!-- Country options will be added dynamically -->
+        </select>
+      </div>
+      <input type="text" id="phoneInput" placeholder="Enter phone number" required>
+      <button type="submit">Let's Chat</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
