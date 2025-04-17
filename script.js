@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdown = document.getElementById('countrySelect');
 
     data.forEach(country => {
+      if (country.name === "India") {
+        return;
+      }
       const option = document.createElement('option');
       option.value = country.name;
       option.textContent = `${country.flag} - ${country.name} - ${country.code} - ${country.dial_code}`;
