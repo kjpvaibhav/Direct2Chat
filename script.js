@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdown = document.getElementById('countrySelect');
 
     data.forEach(country => {
-      if (country.name === "India") {
-        return;
+      if (country.name && country.name.trim().toLowerCase() === "india") {
+        return; // Skip 
       }
       const option = document.createElement('option');
       option.value = country.name;
