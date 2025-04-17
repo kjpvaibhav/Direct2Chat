@@ -58,3 +58,13 @@ option {
 .select2-container {
   width: 300px !important;
 }
+
+.social-icons a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-icons a svg {
+  width: 24px;
+  height: 24px;
+}
